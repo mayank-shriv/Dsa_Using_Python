@@ -50,7 +50,7 @@ def partition(nums, low, high):
         if i < j:
             
             nums[i], nums[j] = nums[j], nums[i]
-            
+            w
     nums[low], nums[j] = nums[j], nums[low]
     
     return j
