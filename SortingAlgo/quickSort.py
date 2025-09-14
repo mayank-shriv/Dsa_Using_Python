@@ -5,12 +5,19 @@ def partition(nums, low, high):
     i, j = low, high
     while i < j:
         while i <= high and nums[i] <= pivot:
+            
             i += 1
+            
         while j >= low and nums[j] > pivot:
+            
             j -= 1
+            
         if i < j:
+            
             nums[i], nums[j] = nums[j], nums[i]
+            
     nums[low], nums[j] = nums[j], nums[low]
+    
     return j
 
 def quicksort(nums, low=0, high=None):
