@@ -6,4 +6,4 @@ def checkSorted(nums):
             return False
     return True
 
-print(checkSorted(nums))
+print(checkSorted(nums))    

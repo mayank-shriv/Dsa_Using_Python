@@ -1,9 +1,10 @@
-nums = [6, 7, 4, 9, 2, 3, 8]
+nums = [6, 18,17, 4, 9, 2, 3, 8]
 
 def partition(nums, low, high):
     pivot = nums[low]
     i, j = low, high
     while i < j:
+
         while i <= high and nums[i] <= pivot:
             
             i += 1
