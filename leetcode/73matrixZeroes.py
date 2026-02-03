@@ -1,5 +1,5 @@
 
-nums = [[1,0,3],[3,5,5],[6,5,56]]
+nums = [[1,8,9],[9,9,7],[9,5,56]]
 r,c = len(nums), len(nums[0])
 rowTrack,colTrack = [0]*r,[0]*c
 for i in range(r):
@@ -17,7 +17,7 @@ print(nums)
 
 
 
-# brite force
+# brute force
 # def findZero(nums):
    
 #     for i in range(0,r):
