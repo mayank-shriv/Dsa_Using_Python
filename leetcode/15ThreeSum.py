@@ -1,4 +1,21 @@
 nums = [1,1,1,-1,3,-3,0,0,0,2,2,-2]
+"""
+This script contains implementations of the "3Sum" problem, which finds all unique triplets in an array
+that sum up to zero. The code includes three approaches: optimal, better, and brute force.
+Key Points:
+1. The optimal solution sorts the array and uses a two-pointer technique to reduce time complexity.
+2. The condition `i != 0` ensures that duplicate triplets are avoided by skipping over repeated elements
+    in the sorted array. This is because if `nums[i] == nums[i-1]` and `i != 0`, the triplet starting with
+    `nums[i]` would already have been considered in a previous iteration.
+3. The `better` solution uses a hash set to reduce the time complexity to O(n^2) by avoiding the innermost loop.
+4. The brute force solution uses three nested loops to find all triplets, resulting in a time complexity of O(n^3).
+Functions:
+- Optimal solution: Uses sorting and two-pointer technique to find unique triplets.
+- Better solution: Uses a hash set to optimize the search for the third element in the triplet.
+- Brute force solution: Checks all possible triplets and stores unique ones in a set.
+Usage:
+- Replace the `nums` array with your input array to test the solutions.
+"""
 
 
 # optimal reducing space complecity
