@@ -10,7 +10,7 @@ while(low<=high):
     mid = (low+high)//2
 
     if nums[mid] == target:
-        print("index is:", mid)
+        print("index is:", mid, "value is :", nums[mid])
         floor = nums[mid]
         ceil = nums[mid]
         break
