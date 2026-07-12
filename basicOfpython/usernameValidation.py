@@ -31,7 +31,7 @@ def isPolindrome(s):
         if ('a'<=ch<='z') or ('0'<=ch<='9'):
             clear.append(ch)
     clear = ''.join(clear)       
-    print(clear)
+    print(type(clear))
     
     left = 0
     right = len(clear)-1
