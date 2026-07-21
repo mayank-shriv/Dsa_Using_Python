@@ -12,14 +12,15 @@ n = int(input())
 	
  
 # In-place two-pointer approach: O(n) time, O(1) extra space
-arr = [int(input()) for _ in range(n)]
-write = 0
-for read in range(n):
-	if arr[read] != 0:
-		arr[write] = arr[read]
-		write += 1
+ 
+arr = [int(input()) for _ in range(n)] # List comprehension
+p = 0
+for q in range(n):
+    if arr[q] != 0:
+        arr[p] = arr[q]
+        p+=1
 
-for i in range(write, n):
-	arr[i] = 0
+for i in range(p,n):
+    arr[p] = 0
 
-print(arr)
+print(f'After moving all zeroes at the end list is looking like this {arr}')
