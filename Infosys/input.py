@@ -19,17 +19,17 @@
 # print(row, colm)
 
 # # ip str 1 or str 2
-# str1 = "abcde"
-# str2 = "e"
-# def removestring(str1,str2):
-#     result = []
-#     for ch in str1:
-#         if ch not in str2:
-#             result.append(ch)
+str1 = "abcde"
+str2 = "e"
+def removestring(str1,str2):
+    result = []
+    for ch in str1:
+        if ch not in str2:
+            result.append(ch)
 
 
-#     return "".join(result)
-# print(removestring(str1,str2))
+    return "-".join(result)
+print(removestring(str1,str2))
 
 
 # n = int(input())
@@ -52,12 +52,12 @@
 # print(" ".join(map(str, result)))
 
 ## 
-n = list(input().split())
-n1 = input().split()
-n2 = list(map(int, input().split())) #isko list me convert karna padega map ke karan
-r = '2212323'
-n3 = " ".join(r)
-print(n)
-print(n1)
-print(n2)
-print(n3)
+# n = list(input().split())
+# n1 = input().split()
+# n2 = list(map(int, input().split())) #isko list me convert karna padega map ke karan
+# r = '2212323'
+# n3 = " ".join(r)
+# print(n)
+# print(n1)
+# print(n2)
+# print(n3)
