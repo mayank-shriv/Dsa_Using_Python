@@ -28,14 +28,20 @@ seen = {0}
 
 found = False
 for num in arr:
-    prefix_sum += num
-    if (prefix_sum - target) in seen:
+    prefix_sum += num                     # [1,2,3,5 4] target = 7  
+                                            
+    if (prefix_sum - target) in seen:      # seen = {0, 1,3,6,11,15} Here there is no continuous sub string
         found = True
         break
     seen.add(prefix_sum)
 
 print(found)
 
+
+
+# [5,6,3,4] target = 7
+seen = {0,5,11,14, 18}  
+# prefix- target in seen        we can easily see 18 - 7 = 11 so 11 eleven in seen set 
 
 
     
