@@ -1,7 +1,7 @@
 # input [1,2,3,4,5]
-n = input().strip("[]").split(',')
-print(n)
-n = list(map(int, n))
+n1 = input().strip("[]").split(',')
+print(n1)
+n = list(map(int, n1))
 print(n)
 
 # Input 10 20 30 40  50 

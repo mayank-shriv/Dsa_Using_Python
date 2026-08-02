@@ -42,7 +42,7 @@ print(a,end='') # No new line
 
 # Custom separator 
 
-print(a, b, c, sep=', ')  #1 2 3
+print(a, b, c, sep=', ')  #1, 2, 3,
 
 
 # If condition in print condition
