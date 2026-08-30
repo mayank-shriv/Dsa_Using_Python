@@ -1,1 +1,2 @@
-linkedList\__pycache__
+__pycache__/
+*.pyc
