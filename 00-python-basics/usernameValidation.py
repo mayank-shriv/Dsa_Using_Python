@@ -1,4 +1,4 @@
-# checking username 
+# checking username
 # n = input("Enter the username:")
 # valid = True
 
@@ -10,12 +10,12 @@
 
 # check polidrome
 # s = '## 45  ra  m  5  4  ##'
-# cleaned = '' 
+# cleaned = ''
 
 # for ch in s:
-#     if s.isalpha():
+#     if ch.isalpha():
 #         cleaned+=ch.lower()
-    
+
 # if cleaned == cleaned[::-1]:
 #     print("polindrome string")
 # else:
@@ -30,9 +30,9 @@ def isPolindrome(s):
     for ch in s:
         if ('a'<=ch<='z') or ('0'<=ch<='9'):
             clear.append(ch)
-    clear = ''.join(clear)       
+    clear = ''.join(clear)
     print(type(clear))
-    
+
     left = 0
     right = len(clear)-1
     while(left<right):
@@ -41,7 +41,7 @@ def isPolindrome(s):
         left+=1
         right-=1
     return True
-    
+
 
 if isPolindrome(s):
     print("string is polindrome")
