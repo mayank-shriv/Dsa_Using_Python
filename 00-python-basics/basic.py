@@ -31,13 +31,11 @@ for i in arr:
     if secondMax<i and i<maxNum:
             secondMax = i
 print(f'Second max is ', secondMax)
-    
 
- #O(nlogn)
-# print(f'second highest value in this array is:{arr[-2]}')
-# T.C. O(nlogn) sorting part
 
-# put all zeroes at last 
+
+
+# put all zeroes at last
 
 arr =[1,0,2,0,5]
 n = len(arr)
@@ -48,12 +46,29 @@ n = len(arr)
 #     if arr[i] != 0: #O(1)
 #         newArr[p] = arr[i]
 #         p+=1
-# print(newArr) 
+# print(newArr)
 
 # optimal without creating a new arr
-arr =[1,0,2,0,5,2,3,4,5,4,65,4,6,4,7,80,0,0,0,0,0,0,0,0,56,56,56,5,6]
+arr =[15,6,4,7,80,0,0,0,56,5,6]
 p = 0
 
+left = 0
+n = len(arr)
+right = len(arr)-1
+while(left<right):
+    if(arr[left] == 0 ):
+        if arr[right]!=0:
+            arr[left],arr[right] = arr[right], arr[left]
+            left+=1
+            right-=1
+        else:
+            right-=1
+
+    else:
+        left+=1
+
+
+print(arr)
 
 for i in arr:
     if i!=0:
